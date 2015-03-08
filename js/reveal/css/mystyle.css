@@ -1,0 +1,52 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+cite {
+  font-style: italic;
+}
+
+math {
+  font-size: 125%;
+}
+
+.reveal h1 {
+  font-size: 220%;
+}
+
+/* Colorbrewer "Set1" colors */
+.red {
+  color: #e41a1c;
+}
+
+.blue {
+  color: #377eb8;
+}
+
+.green {
+  color: #4daf4a;
+}
+
+.purple {
+  color: #984ea3;
+}
+
+.orange {
+  color: #ff7f00;
+}
+
+.yellow {
+  color: #ffff33;
+}
+
+.brown {
+  color: #a65628;
+}
+
+.pink {
+  color: #f781bf;
+}

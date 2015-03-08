@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>On the efficacy of weak measurement tomography</title>
+
+	<meta name="description" content="An evaluation of the efficacy of
+    tomographic schemes using weak measurements">
+	<meta name="author" content="Jonathan Gross" />
+
+	<!-- libs stylesheets -->
+	<link rel="stylesheet" href="js/reveal/css/theme/black.css">
+	<link rel="stylesheet" href="js/reveal/css/reveal.min.css">
+	<link rel="stylesheet" href="js/browsercast/browsercast.css">
+	<link rel="stylesheet" href="js/browsercast/timeline/timeline.css">
+	<link rel="stylesheet" href="js/browsercast/timeline/glyphicon.css">
+	<link rel="stylesheet" href="js/reveal/css/mystyle.css">
+
+</head>
+
+<!-- Body -->
+<body>
+	<div id="browsercast">
+		<div id="bc-audio">
+			<code>
+				[[&quot;audio/edited_march_meeting.ogg&quot;,[0,658.940562,0]]]
+			</code>
+		</div>
+	</div>
+	<div class="reveal">
+		<div class="slides">
+			
+				<section data-bc-end="17.33" data-bc-start="0.00">
+	<h1 xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Weak
+            measurement tomography</h1>
+	<p>
+		<small><span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jonathan Gross</span>, Ninnat
+              Dangniam, Chris Ferrie, Carl Caves</small>
+	</p>
+          <p>
+            <small><em>Center for Quantum Information and Control</em>,
+            University of New Mexico</small>
+          </p>
+          <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="img/by-sa.svg">
+          </a></p>
+				</section>
+
+        <section data-bc-end="45.43" data-bc-start="17.33">
+          <h2>Weak measurements</h2>
+          <img src="img/weak-interaction.svg" height="192px">
+          <ul>
+            <li>Measurements that give less than maximal information about the system</li>
+            <li>Can model with an ancilla and weakly correlating unitary</li>
+          </ul>
+        </section>
+
+        <section data-bc-end="72.18" data-bc-start="45.43">
+          <h2>Random projective measurements</h2>
+          <img src="img/random-odop-ckt.svg" height="192px">
+          <p>Minimal kind of <q>standard</q> measurement for tomography is a randomly chosen one-dimensional projective measurement (random ODOP)</p>
+        </section>
+
+        <section data-bc-end="101.46" data-bc-start="72.18">
+          <h2>Standard claims</h2>
+          <img src="img/sg-tetrahedron.svg" height="192px">
+          <ol>
+            <li>Many real measurements are weak</li>
+            <li>Weak measurements are a resource for performing exotic measurements
+              <ul>
+                <li>Oreshkov and Brun, Phys. Rev. Lett. <strong>95</strong>, 110409 (2005)
+                  <br>
+                  <a href="http://dx.doi.org/10.1103/PhysRevLett.95.110409"><cite>Weak measurements are universal</cite></a></li>
+              </ul>
+            </li>
+          </ol>
+
+          <aside class="notes">
+            <p>Random ODOPs can't do tetrahedron, but supplemented with weak
+            measurements they can</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="131.60" data-bc-start="101.46">
+          <h2>Novel claims</h2>
+          <ol>
+            <li>Weak measurements provide a fundamentally <strong class="red">new</strong> way of doing tomography</li>
+            <li>Weak measurements allow you to do tomography <strong class="green">better</strong> than non-weak measurements</li>
+            <li>Weak measurements give new <strong class="blue">insights</strong> into the fundamentals of quantum mechanics</li>
+          </ol>
+
+          <aside class="notes">
+            <p>Will evaluate "new" and "better" wrt random ODOPs</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="154.90" data-bc-start="131.60">
+          <h2>Evaluation technique</h2>
+          <p>Write down POVMs</p>
+          <ul>
+            <li>Gives a very clean, complete description of a measurement's
+            tomographic properties</li>
+            <li>Facilitates comparison to randomly chosen one-dimensional
+            orthogonal projective measurement (random ODOP)</li>
+          </ul>
+
+          <aside class="notes">
+            <p>POVMs tell you everything you need to know for tomography</p>
+            <p>POVMs remove irrelevant details, making comparisons easier</p>
+        </aside></section>
+
+        <section data-bc-end="186.95" data-bc-start="154.90">
+          <h2>Das and Arvind</h2>
+          <small>Das and Arvind, Phys. Rev. A <strong>89</strong>, 062121 (2014)
+            <br>
+            <a href="http://dx.doi.org/10.1103/PhysRevA.89.062121"><cite>Estimation
+            of quantum states by weak and projective
+        measurements</cite></a></small>
+          <p>Claims:</p>
+              <ol>
+                <li>The measurement is something <strong class="red">new</strong> beyond <q>standard</q> tomography</li>
+                <li>The measurement performs <strong class="green">better</strong> than <q>standard</q> tomography</li>
+                <li>The <strong class="blue">insight</strong> is that weak measurements allow re-use of the system due to the small disturbance</li>
+              </ol>
+          <p></p>
+        </section>
+
+        <section data-bc-end="218.64" data-bc-start="186.95">
+          <h2>Weak coupling</h2>
+          <img src="img/das-weak-interaction.svg" height="192px">
+          <img src="img/continuous-meter.svg" height="256px">
+        </section>
+
+        <section data-bc-end="239.11" data-bc-start="218.64">
+          <h2>Measurement protocol</h2>
+          <img src="img/weak-meas-ckt.svg" height="384px">
+        </section>
+
+        <section data-bc-end="280.00" data-bc-start="239.11">
+          <h2>Analysis</h2>
+          <p>
+            Two perspectives:
+            </p><ol>
+              <li>The weak measurements extract data prior to the projection</li>
+              <li>The weak measurements modify the final measurement</li>
+            </ol>
+          <p></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup class="blue"><mi>K</mi><mo>±</mo><mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo>±</mo><msub><mi>σ</mi><mi>y</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>q</mi><mo stretchy="true" form="postfix">|</mo></mrow><msup><mi>U</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>ϕ</mi><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi class="red">K</mi><mn class="blue">±</mn></msub><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup class="blue"><mi>K</mi><mo>±</mo><mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><msup class="orange"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><msup class="purple"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+        </section>
+
+        <section data-bc-end="327.62" data-bc-start="280.00">
+          <h2>POVM elements</h2>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi class="red">E</mi><mo class="blue">±</mo></msub><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup class="purple"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mo>†</mo></msup><msup class="orange"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mo>†</mo></msup><msubsup class="blue"><mi>E</mi><mo>±</mo><mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><msup class="orange"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><msup class="purple"><mi>K</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi class="red">E</mi><mo stretchy="false" form="prefix">(</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi class="brown">G</mi><mo stretchy="false" form="prefix">(</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo stretchy="false" form="postfix">)</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo>⋅</mo><mover><mi>σ</mi><mo accent="true">⃗</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo class="blue">±</mo></msub><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>−</mo><msub><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo class="blue">∓</mo></msub><mo stretchy="false" form="prefix">(</mo><mo>−</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><mo>−</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi class="brown">G</mi><mo stretchy="false" form="prefix">(</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi class="brown">G</mi><mo stretchy="false" form="prefix">(</mo><mo>−</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+
+          <aside class="notes">
+            <p>Strong POVM element modified by weak Kraus operators</p>
+            <p>Rank-1 POVM written as weighted projectors</p>
+            <p>Direction function of measurement outcomes</p><p>
+            </p><p>Equal weight for opposite directions (orthogonal projectors)</p>
+        </aside></section>
+
+        <section data-bc-end="337.75" data-bc-start="327.62">
+          <h2>Effective random ODOP</h2>
+          <img src="img/random-projector-das.svg" height="256px">
+          <p>Equally weighted, orthogonal projectors: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi class="red">E</mi><mo class="blue">±</mo></msub><mo stretchy="false" form="prefix">(</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi class="red">E</mi><mo class="blue">∓</mo></msub><mo stretchy="false" form="prefix">(</mo><mo>−</mo><msub class="purple"><mi>q</mi><mn>1</mn></msub><mo>,</mo><mo>−</mo><msub class="orange"><mi>q</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+        </section>
+
+        <section data-bc-end="370.72" data-bc-start="337.75">
+          <h2>Bloch sphere distributions</h2>
+          <img src="img/composite-bloch-plots.svg" height="384px">
+          <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi class="brown">G</mi><mo stretchy="false" form="prefix">(</mo><mover class="pink"><mi>n</mi><mo accent="true">^</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>ϵ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mo>Δ</mo><msup><mi>q</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></p>
+
+          <aside class="notes">
+            <p>Optimal value is the one closest to uniform</p>
+            <p>Optimal measurement is Haar-random ODOP</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="402.15" data-bc-start="370.72">
+          <h2>Evaluation</h2>
+          <p>The proposal has several problems:
+            </p><ol>
+              <li>
+                The measurement is <strong class="red">not new</strong>
+                <ul>
+                  <li>POVM is a random ODOP (<em>i.e.</em> <q>standard</q> tomography)</li>
+                </ul>
+              </li>
+              <li>
+                The measurement is <strong class="green">not better</strong>
+                <ul>
+                  <li>Best measurement is projector sampled from Haar uniform distribution (random ODOP)</li>
+                </ul>
+              </li>
+              <li>
+                The <strong class="blue">insight is misleading</strong>
+                <ul>
+                  <li>Extra weak measurements don't extract more information, they generate a distribution</li>
+                </ul>
+              </li>
+            </ol>
+          <p></p>
+        </section>
+
+        <section data-bc-end="429.19" data-bc-start="402.15">
+          <h2>Direct state tomography (DST)</h2>
+          <p>Lundeen <em>et al.</em>, <em>Nature</em> <strong>474</strong>, 188–191 (2011)
+            <br>
+          </p><ol>
+            <li>The measurement uses a <strong class="red">new</strong> technique inspired by weak-value procedures</li>
+            <li>Simplicity of measurement makes it <strong class="green">better</strong> for some systems</li>
+            <li>The relationship between meter readings and probability
+            amplitudes provides <strong class="blue">insight</strong> for the interpretation of the wavefunction</li>
+          </ol>
+
+          <aside class="notes">
+            <p>Again have new and better claims</p>
+            <p>Measurement results proportional to wavefunction</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="460.82" data-bc-start="429.19">
+          <h2>Direct state tomography (DST)</h2>
+          <img src="img/dst-meas.svg" height="192px">
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>n</mi><mo stretchy="true" form="infix">|</mo><msub class="blue"><mi>c</mi><mi>m</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>=</mo><mfrac><mn>1</mn><msqrt><mi>d</mi></msqrt></mfrac><msup><mi>ω</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup><mo>,</mo><mspace width="0.167em"></mspace><mi>ω</mi><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>π</mi><mi>i</mi><mo>/</mo><mi>d</mi></mrow></msup></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>n</mi><mo stretchy="true" form="infix">|</mo><mi>𝜓</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>∝</mo><msub><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><msub class="purple"><mi>σ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub class="blue"><mi>c</mi><mn>0</mn></msub><mo>,</mo><mi>n</mi></mrow></msub><mo>+</mo><mi>i</mi><msub><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><msub class="orange"><mi>σ</mi><mi>z</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub class="blue"><mi>c</mi><mn>0</mn></msub><mo>,</mo><mi>n</mi></mrow></msub><mo>+</mo><mstyle mathvariant="script"><mi>𝒪</mi></mstyle><mo stretchy="false" form="prefix">(</mo><msup><mi>φ</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+          <small>Maccone and Rusconi, Phys. Rev. A <strong>89</strong>, 022122 (2014)
+            <br>
+            <a href="http://dx.doi.org/10.1103/PhysRevA.89.022122"><cite>State
+                estimation: A comparison between direct state measurement and
+            tomography</cite></a></small>
+
+          <aside class="notes">
+            <p>Have reconstruction basis n</p>
+            <p>Postselect on outcome in conjugate basis</p>
+            <p>Real and imag prop to y and z</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="485.01" data-bc-start="460.82">
+          <h2>Postselect on different state?</h2>
+          <img src="img/change-postselect-ckt.svg" height="256px">
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi class="red">Z</mi><mrow><mo stretchy="true" form="prefix">|</mo><msub class="blue"><mi>c</mi><mi>m</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub class="blue"><mi>c</mi><mrow><mi>m</mi><mo>⊕</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></math></p>
+        </section>
+
+        <section data-bc-end="519.71" data-bc-start="485.01">
+          <h2>Postselection throws away information</h2>
+          <img src="img/rephase-state-ckt.svg" height="192px">
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi class="red">Z</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>n</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>=</mo><msup><mi>ω</mi><mi>n</mi></msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>n</mi><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></math></p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msup><mi>ω</mi><mrow><mo>−</mo><mi>j</mi><mi>n</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>n</mi><mo stretchy="true" form="infix">|</mo><mi>ψ</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>∝</mo><msub><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><msub class="purple"><mi>σ</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub class="blue"><mi>c</mi><mi>j</mi></msub><mo>,</mo><mi>n</mi></mrow></msub><mo>+</mo><mi>i</mi><msub><mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><msub class="orange"><mi>σ</mi><mi>z</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mrow><msub class="blue"><mi>c</mi><mi>j</mi></msub><mo>,</mo><mi>n</mi></mrow></msub><mo>+</mo><mstyle mathvariant="script"><mi>𝒪</mi></mstyle><mo stretchy="false" form="prefix">(</mo><msup><mi>φ</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow></math></p>
+
+          <aside class="notes">
+            <p>Z commutes with U</p>
+            <p>Almost identical form</p>
+            <p>Known phase means discarded data is just as useful</p>
+          </aside>
+        </section>
+
+        <section data-bc-end="550.50" data-bc-start="519.71">
+          <h2>Z-measurement (imaginary part)</h2>
+          <img src="img/z-dst-classical.svg" height="256px">
+          <p>Measurement commutes with control</p>
+          <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub class="red"><mi>U</mi><mrow><mi>n</mi><mo>±</mo></mrow></msub><mo>=</mo><msup><mi>e</mi><mrow><mo>∓</mo><mi>i</mi><mi>φ</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi>n</mi><mo stretchy="true" form="infix">⟩</mo><mo stretchy="true" form="infix">⟨</mo><mi>n</mi><mo stretchy="true" form="postfix">|</mo></mrow></mrow></msup></mrow></math></p>
+        </section>
+
+        <section data-bc-end="594.23" data-bc-start="550.50">
+          <h2>Evaluation</h2>
+          <ol>
+            <li>
+              The weak-value-inspired procedure is only <strong class="red">new</strong> for the real parts in dimensions higher than 2
+              <ul>
+                <li>All other measurements are random ODOPs</li>
+              </ul>
+            </li>
+            <li>
+              It is not <strong class="green">better</strong> than the same scheme without postselection
+              <ul>
+                <li>Eliminating postselection does not change experimental setup and leaves postprocessing virtually unchanged</li>
+              </ul>
+            </li>
+            <li>
+              The <strong class="blue">insight</strong> is misleading since real and imaginary components cannot be determined until all measurements are made
+            </li>
+          </ol>
+        </section>
+
+        <section data-bc-end="658.94" data-bc-start="594.23">
+          <h2>Summary</h2>
+          <ol>
+            <li>Random ODOPs already exhibit much of the <q><strong class="red">new</strong></q> behavior seen in weak measurements</li>
+            <li>For average fidelity, the <strong class="green">best</strong> independent measurement is a random ODOP</li>
+            <li>For tomography in general, the <strong class="green">best</strong> thing to do is keep all the data</li>
+            <li>Many of the <strong class="blue">insights</strong> of weak measurements have caveats that become clear when analyzed at the level of POVMs</li>
+          </ol>
+        </section>
+
+			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/reveal/lib/js/head.min.js"></script>
+	<script type="text/javascript" src="js/reveal/js/reveal.js"></script>
+	<script type="text/javascript" src="js/browsercast/browsercast-reveal.js"></script>
+	<script type="text/javascript" src="js/browsercast/timeline/EventEmitter.js"></script>
+	<script type="text/javascript" src="js/browsercast/timeline/timeline.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+
+    <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+            });
+	</script>
+
+</body>
+</html>
